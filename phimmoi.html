@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="playground.css" rel="stylesheet" >
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phimmmoi</title>
+    <style>
+     
+       
+        h2{
+            font-size: 25px;
+            
+            margin: 20px;
+            color:rgb(254, 171, 7) !important;
+        }
+        h3{
+            margin-left: 30px;
+            color: white;
+            margin-top:60px;
+        }
+       
+        a{
+            color:white;
+        }
+        .tong{
+            width: 950px;
+            margin: 0 auto;
+            background-color:#050505e6;
+        }
+        .hotphim{
+            display: grid;
+            grid-template-columns: 13fr 5fr;
+        }
+        .hotphim-left{
+            margin: 20px 20px;
+        }
+        .hotphim-right{
+            border-left: 1px solid white;
+        }
+        .phimmoinoibat{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        .phimmoinoibat p{
+            position: absolute;
+            background-color: rgb(241, 49, 49);
+        }
+        .phimchieurapupdate{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        .phimboupdate{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        .phimleupdate{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        p{
+            position: absolute;
+            background-color: rgb(48, 129, 221);
+            margin-left: 15px;
+            font-size:13px;
+            color: white;
+            padding:2px;
+        }
+        .namphathanh{
+            display:flex;
+            list-style: none;
+        }
+        .namphathanh li{
+            background-color: #171717e6;
+            margin:3px;
+            width:80px;
+            height:20px;
+            text-align: center;
+        }
+        .namphathanh  li a{
+            text-align: center;
+            text-decoration: none;
+        }
+        .phim{
+            margin-left: 20px;
+        }
+        .lienquan{
+            height: 80px;
+            width: 300px;
+            margin-left: 20px;
+        }
+        .phimlienquan{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            background-color:#171717e6;
+            margin-top: 3px;
+        }
+        .search{
+            width: 100%;
+            margin: 0;
+            padding: 15px;
+            margin-left: 30px;
+        }
+        .search input{
+            width: 500px;
+            background-color: black;
+        }
+        .search input:hover{
+            background-color: rgb(16, 5, 5);
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="tong"> 
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Tìm kiếm..">
+                <button type="submit"><img src="images/search.png"style="width:15px"></button>
+            </form>
+        </div>  
+        <div class="hotphim">
+            <div class="hotphim-left">
+
+                <hr>
+                <marquee direction="right">    
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/nVxbWA29Es6VM60JlnSiJamOMwS.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/1uNmOb0VsckoQmKQbPpdj1dkDoZ.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/rMvPXy8PUjj1o8o1pzgQbdNCsvj.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/tfq3GsbWZA1nsIlhowB75G6V1Ym.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/oP03EF9eYWqvycFGN5TeEo3nN7l.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/r7DuyYJ0N3cD8bRKsR5Ygq2P7oa.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/rhuqWhQ2gmy8toUiDtpuHCdUt5j.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/nVxbWA29Es6VM60JlnSiJamOMwS.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/elCiJakZkeqDqUb3H6eOUHmSIPK.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/nVxbWA29Es6VM60JlnSiJamOMwS.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/1uNmOb0VsckoQmKQbPpdj1dkDoZ.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/rMvPXy8PUjj1o8o1pzgQbdNCsvj.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/tfq3GsbWZA1nsIlhowB75G6V1Ym.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/oP03EF9eYWqvycFGN5TeEo3nN7l.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/r7DuyYJ0N3cD8bRKsR5Ygq2P7oa.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/rhuqWhQ2gmy8toUiDtpuHCdUt5j.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/elCiJakZkeqDqUb3H6eOUHmSIPK.jpg" style="width:300px"></a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/nVxbWA29Es6VM60JlnSiJamOMwS.jpg" style="width:300px"></a>
+                </marquee><hr><br>
+                <h1><span style="color:rgb(38, 191, 241);" >Phim nổi bật</span></h1>
+                <div class="phimmoinoibat">
+                    <div>
+                        <p>NỔI BẬT</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/The-Escape-of-the-Seven.jpg" style="width:90%"></a>
+                        <a>Cuộc chiến sinh tồn</a>
+                    </div>
+                    <div>
+                        <p>NỔI BẬT</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Biet-doi-danh-thue-4.jpg" style="width:90%"></a>
+                        <a>Biệt đội đánh thuê 4</a>
+                    </div>
+                    <div>
+                        <p>NỔI BẬT</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Loki.jpg" style="width:90%"></a>
+                        <a>Loki: Phần 2</a>
+                    </div>
+                    <div>
+                        <p>NỔI BẬT</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/05/meg-2.jpg" style="width:90%"></a>
+                        <a>Cá mập bạo chúa</a>
+                    </div>
+                    <div>
+                        <p>NỔI BẬT</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/07/Oppenheimer.jpg" style="width:90%"></a>
+                        <a> Oppenheimer</a>
+                    </div>
+                </div><br><hr/>
+                <h2>Phim chiếu rạp mới cập nhật</h2>
+                <div class="phimchieurapupdate">
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Thien-ac-doi-dau-3.jpg" style="width:90%"></a>
+                        <a>Thiện ác đối đầu</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Ransomed.jpg" style="width:90%"></a>
+                        <a>Bộ đôi báo thủ</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/The-Nun-2.jpg" style="width:90%"></a>
+                        <a>Ác quỷ ma sơ 2</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/07/nhiem-vu-bat-kha-thi-7.jpg" style="width:90%"></a>
+                        <a>Nhiệm vụ: Bất khả thi</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/06/Live-Stream.jpg" style="width:90%"></a>
+                        <a> Liver stream</a>
+                    </div>
+                </div><br><hr/>
+                <h2>Phim bộ mới cập nhật</h2>
+                <div class="phimboupdate">
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Co-Nang-Manh-Me-Gang-Nam-Soon.jpg" style="width:90%"></a>
+                        <a>Cô nàng mạnh mẽ GangNamSoon</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/The-Escape-of-the-Seven.jpg" style="width:90%"></a>
+                        <a>Cuộc chiến sinh tồn</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Gen-V.jpg" style="width:90%"></a>
+                        <a>Gen V</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Loki.jpg" style="width:90%"></a>
+                        <a>Loki: Phần 2</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Chucky-3.jpg" style="width:90%"></a>
+                        <a> Ma Búp Bê: Phần3</a>
+                    </div>
+                </div><br><hr/>
+                <h2>Phim lẻ mới cập nhật</h2>
+                <div class="phimleupdate">
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/08/Nhan-Duyen-Tien-Dinh.jpg" style="width:90%"></a>
+                        <a>Nhân duyên tiền đình</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Tuong-Tay-Quy-An.jpg" style="width:90%"></a>
+                        <a>Tây tương quỷ ám</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Dich-Nhan-Kiet-Muon-Duong-Am-Binh.jpg" style="width:90%"></a>
+                        <a>Địch nhân kiệt mượn dương âm binh</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/08/tay-dua-cu-phach.jpg" style="width:90%"></a>
+                        <a>Tay đua cự phách</a>
+                    </div>
+                    <div>
+                        <p>HD VIETSUB</p>
+                        <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Slotherhouse.jpg" style="width:90%"></a>
+                        <a>Con lười sát nhân</a>
+                    </div>
+                </div><br><hr/>
+            </div>
+            <div class="hotphim-right">
+                <div>
+                    <h3>Năm phát hành</h3>
+                    <ul class="namphathanh">
+                        <li><a href="#">2023</a></li>
+                        <li><a href="#">2022</a></li>
+                        <li><a href="#">2021</a></li>
+                    </ul>
+                    <ul class="namphathanh">
+                        <li><a href="#">2020</a></li>
+                        <li><a href="#">2019</a></li>
+                        <li><a href="#">2018</a></li>
+                    </ul>
+                    <ul class="namphathanh">
+                        <li><a href="#">2017</a></li>
+                        <li><a href="#">2016</a></li>
+                        <li><a href="#">2015</a></li>
+                    </ul>
+                    <ul class="namphathanh">
+                        <li><a href="#">2014</a></li>
+                        <li><a href="#">2013</a></li>
+                        <li><a href="#">2012</a></li>
+                    </ul>
+
+                </div>
+                <div class="phim">
+                    <a style="margin-top: 90px;position: absolute;margin-left:10px ">Họ nhân bản Tyrone</a>
+                    <a href="#"><img src="https://image.tmdb.org/t/p/w500/4xBX8xoVyd0b1jh9F1fXTwxmY8H.jpg"style="width:300px;height:120px"></a>         
+                </div>
+                <div class="lienquan">
+                    <div class="phimlienquan">
+                        <div>
+                            <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Co-Nang-Manh-Me-Gang-Nam-Soon.jpg" style="width:70px;height:80px" ></a>
+                        </div>
+                        <div>
+                            <a style="font-size:large">Cô nàng mạnh mẽ GangNamSoon</a>
+                        </div>
+                    </div>
+                    <div class="phimlienquan">
+                        <div>
+                            <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Gen-V.jpg" style="width:70px;height:80px" ></a>
+                        </div>
+                        <div>
+                            <a style="font-size:large">Gen V</a>
+                        </div>
+                    </div>
+                    <div class="phimlienquan">
+                        <div>
+                            <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Toi-ac-kinh-hoang.jpg" style="width:70px;height:80px" ></a>
+                        </div>
+                        <div>
+                            <a style="font-size:large">Tội ác kinh hoàng</a>
+                        </div>
+                    </div>
+                    <div class="phimlienquan">
+                        <div>
+                            <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Chucky-3.jpg" style="width:70px;height:80px" ></a>
+                        </div>
+                        <div>
+                            <a style="font-size:large">Ma Búp Bê: Phần 3</a>
+                        </div>
+                    </div>
+                    <div class="phimlienquan">
+                        <div>
+                            <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/10/Loki.jpg" style="width:70px;height:80px" ></a>
+                        </div>
+                        <div>
+                            <a style="font-size:large">Loki: Phần 2</a>
+                        </div>
+                    </div>
+                    <div class="phimlienquan">
+                        <div>
+                            <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/Tuong-Tay-Quy-An.jpg" style="width:70px;height:80px" ></a>
+                        </div>
+                        <div>
+                            <a style="font-size:large">Tương tây quỷ án</a>
+                        </div>
+                    </div>
+                    <div class="phimlienquan">
+                        <div>
+                            <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/08/Nhan-Duyen-Tien-Dinh.jpg" style="width:70px;height:80px" ></a>
+                        </div>
+                        <div>
+                            <a style="font-size:large">Nhân duyên tiền đình</a>
+                        </div>
+                    </div>
+                    <div class="phimlienquan">
+                        <div>
+                            <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/dia-dang-sup-do.jpg" style="width:70px;height:80px" ></a>
+                        </div>
+                        <div>
+                            <a style="font-size:large">Địa đàng sụp đổ</a>
+                        </div>
+                    </div>
+                    <div class="phimlienquan">
+                        <div>
+                            <a href="#"><img src="https://phimmoiyyy.net/wp-content/uploads/2023/09/dua-tre-gia-mao.jpg" style="width:70px;height:80px" ></a>
+                        </div>
+                        <div>
+                            <a style="font-size:large">Đứa trẻ giả mạo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
